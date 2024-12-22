@@ -7,7 +7,7 @@ namespace simple_linked_list {
 std::size_t List::size() const {
   // TODO: Return the correct size of the list.
   List *empty{};
-  int arr_size = sizeof(&empty) / sizeof(&empty[0]);
+  int arr_size = sizeof(empty) / sizeof(empty[0]);
   return arr_size;
 }
 

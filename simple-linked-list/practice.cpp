@@ -7,5 +7,6 @@ int main() {
   empty.push(44);
   empty.push(54);
 
-  std::cout << empty.size();
+  std::cout << sizeof(empty) / sizeof(empty[0]);
+  // std::cout << empty.size();
 }
