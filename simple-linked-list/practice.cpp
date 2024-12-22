@@ -1,6 +1,11 @@
+#include "simple_linked_list.cpp"
 #include <iostream>
 
 int main() {
-  std::string practice = "simple linked list practice";
-  std::cout << practice;
+
+  simple_linked_list::List empty{};
+  empty.push(44);
+  empty.push(54);
+
+  std::cout << empty.size();
 }

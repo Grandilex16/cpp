@@ -5,28 +5,30 @@
 namespace simple_linked_list {
 
 std::size_t List::size() const {
-    // TODO: Return the correct size of the list.
-    return 0;
+  // TODO: Return the correct size of the list.
+  List *empty{};
+  int arr_size = sizeof(&empty) / sizeof(&empty[0]);
+  return arr_size;
 }
 
 void List::push(int entry) {
-    // TODO: Implement a function that pushes an Element with `entry` as data to
-    // the front of the list.
+  // TODO: Implement a function that pushes an Element with `entry` as data to
+  // the front of the list.
 }
 
 int List::pop() {
-    // TODO: Implement a function that returns the data value of the first
-    // element in the list then discard that element.
-    return 0;
+  // TODO: Implement a function that returns the data value of the first
+  // element in the list then discard that element.
+  return 0;
 }
 
 void List::reverse() {
-    // TODO: Implement a function to reverse the order of the elements in the
-    // list.
+  // TODO: Implement a function to reverse the order of the elements in the
+  // list.
 }
 
 List::~List() {
-    // TODO: Ensure that all resources are freed on destruction
+  // TODO: Ensure that all resources are freed on destruction
 }
 
-}  // namespace simple_linked_list
+} // namespace simple_linked_list
