@@ -37,16 +37,20 @@ public:
     if (head == nullptr) {
       head = newNode;
     } else {
-      Node *current = head;
-      while (current->next != nullptr) {
-        current = current->next;
+      // Creating an instance of Node called currentNode which equals head
+      Node *currentNode = head;
+      // while next node is not pointer, assign currentNode to next node
+      while (currentNode->next != nullptr) {
+        currentNode = currentNode->next;
       }
-      current->next = newNode;
+
+      currentNode->next = newNode;
     }
   }
 
   // Delete the first node
   void popFront() {
+    // checks if head is empty or not.
     if (head == nullptr) {
       std::cout << "List is empty!" << std::endl;
       return;
@@ -70,6 +74,7 @@ private:
 };
 
 int main() {
+
   LinkedList List;
 
   List.pushBack(10);
