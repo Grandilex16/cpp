@@ -17,6 +17,7 @@ public:
   // Destructor to clean up memory
   ~LinkedList() {
     Node *current = head;
+
     while (current != nullptr) {
       Node *temp = current;
       current = current->next;
@@ -43,7 +44,6 @@ public:
       while (currentNode->next != nullptr) {
         currentNode = currentNode->next;
       }
-
       currentNode->next = newNode;
     }
   }
@@ -62,10 +62,12 @@ public:
 
   void display() {
     Node *current = head;
+
     while (current != nullptr) {
       std::cout << current->data << " ";
       current = current->next;
     }
+
     std::cout << "nullptr" << std::endl;
   }
 

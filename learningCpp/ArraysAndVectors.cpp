@@ -5,7 +5,6 @@
 #include <vector>
 
 // making the grade practice
-
 // Round down all provided student scores
 std::vector<int> round_down_scores(std::vector<double> student_scores) {
   std::vector<int> roundedScores;
