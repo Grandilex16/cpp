@@ -1,10 +1,15 @@
 #pragma once
 
+#include <string>
+#include <vector>
 namespace lasagna_master {
 
 struct amount {
-    int noodles;
-    double sauce;
+  int noodles;
+  double sauce;
 };
 
-}  // namespace lasagna_master
+int preparationTime(std::vector<std::string> layers);
+int preparationTime(std::vector<std::string> layers, int num);
+
+} // namespace lasagna_master
